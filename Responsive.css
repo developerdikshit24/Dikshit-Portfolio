@@ -1,0 +1,163 @@
+@media (max-width:1328px) {
+    .container {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+}
+@media (max-width:996px) {
+   
+    .hero-img{
+        width: 100%;
+        
+    }
+    .logo {
+        margin-inline: 28px;
+        justify-content: center;
+    }
+    
+    .navitem  {
+      position: absolute;
+      background-color: white;
+      z-index: 1;
+      left: -100%;
+      top: 100%;
+      width: 100%;
+      padding-block: 20px;
+      transition: 0.5s ease-in-out;
+      
+    }
+    .active{
+        left: 0;
+    }
+    .navitem ul{
+        flex-direction: column;
+    }
+    .nav-toggle{
+        display:inline-block;
+    }
+
+    .navbar{
+        height: 50px;
+        overflow: initial;
+    }
+    .side_2 img{
+        width: 430px;
+    }
+    .footer-item{
+        flex-direction: column;
+        width: 100%;
+    }
+   
+}
+@media (min-width:996px){
+    .left_footer{
+        width: 50%;
+    }
+}
+@media (max-width:900px){
+    .head{
+        flex-direction: column-reverse;
+        justify-content: start;
+    }
+    .hero_text{
+        width: 96%
+    }
+    .company{
+        margin-top: 10px;
+    }
+    .skill_section{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .skill_item{
+    
+        max-width: 100%;
+    }
+    .align , .cmpy_text{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .about_item{
+        flex-direction: column-reverse;
+    }
+    .order{
+        order: 0;
+    }
+    .side_1{
+        margin-top: 1rem;
+        width: 100%;
+    }
+    
+    .left_footer a img {
+        height: 80px;
+    }
+}
+@media (max-width:600px){
+    .navimg a img{
+        height: 42px;
+    }
+    .navicon a {
+        margin-inline: 4px;
+    }
+    .navicon a img {
+        width: 20px;
+    }
+ .contact_second{
+    width: 314px;
+    height: 375px;
+    padding-inline: 12px;
+ }
+ .contact_second h1{
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 2px;
+ }    
+ .contact_third label {
+    line-height: 31px;
+    font-size: 14px;
+}
+.contact_third p {
+    margin: 1px;
+}
+.contact_third p input{
+    height: 29px;
+}
+ .small-para{
+    padding-bottom: 1px;
+    width: 52%;
+ }
+ .side_2 img {
+    width: 280px;
+}  
+.about-me{
+    margin-top: 20px;
+} 
+.left_footer  {
+    height: 80px;
+}
+.right_footer {
+    gap: 1rem;
+    font-size: 11px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    height: 99px;
+}
+.heading{
+    margin-bottom: 20px;
+}
+.side_1{
+    line-height: 5px;
+    font-size: 15px;
+}
+.right_third a img {
+    width: 25px;
+}
+.left_footer a img {
+    height: 53px;
+}
+.back-top img{
+    width: 40px;
+}
+
+}

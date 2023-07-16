@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root {
+    --primary-color: #8400ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* nav section css here */
+
+.container {
+    width: 1300px;
+    margin-inline: auto;
+    padding-inline: 30px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.back {
+    z-index: -1;
+    box-shadow: 1px 1px 16px rgb(201, 201, 201);
+}
+
+
+.navbar {
+    justify-content: space-between;
+    position: relative;
+
+}
+
+ul li {
+
+    list-style: none;
+    padding: 22px;
+    border-bottom: 2px solid transparent;
+    font-weight: 500;
+    transition: all .5s ease;
+}
+
+ul li:hover {
+    color: rgb(132, 0, 255);
+    border-bottom: 2px solid rgb(132, 0, 255);
+    transform: scale(1.1);
+}
+
+.navimg a img {
+    padding-top: 4px;
+    height: 78px;
+}
+
+
+span {
+    font-weight: 900;
+    font-size: 30px;
+    position: relative;
+    top: 2px;
+}
+
+.navitem a {
+    color: rgba(28, 28, 28, 0.721);
+    text-decoration: none;
+}
+
+.navicon a {
+    margin-inline: 12px;
+}
+
+.navicon a img {
+    width: 28px;
+    transition: all .5s ease;
+}
+
+.navicon a img:hover {
+    transform: scale(1.2);
+}
+
+.nav-toggle {
+    display: none;
+}
+
+/* hero section css here */
+.hero {
+    background: linear-gradient(to top right, rgba(255, 0, 0, 0.179), rgba(132, 0, 255, 0.179));
+    background-color: white;
+}
+
+.hero_section {
+    width: 100%;
+
+}
+
+.hero_text>h3 {
+    font-size: 30px;
+    margin-left: 3px;
+}
+
+.hero_text>h3 span {
+    font-size: 40px;
+    color: #8400ff;
+}
+
+.hero_text>h2 {
+
+    font-size: 5rem;
+    color: rgba(0, 0, 0, 0.871);
+    border-bottom: 8px solid rgb(132, 0, 255);
+}
+
+.hero_text {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 45%;
+}
+
+.hero_text p {
+    width: 101%;
+    color: rgba(0, 0, 0, 0.69);
+    font-weight: 800;
+    margin-top: 16px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.hero_text button {
+    width: 8rem;
+    padding: 10px;
+    margin-top: 18px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+.hero_text button:hover {
+    background-color: rgb(107, 0, 206);
+}
+
+.head {
+    justify-content: space-between;
+}
+
+.hero-img {
+    width: 560px;
+}
+
+.heroimg a img {
+    animation: Anime 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes Anime {
+    from {
+        transform: translateY(0px);
+
+    }
+
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+/* Mini Text section here */
+.mini_text {
+    width: 100%;
+    background: url("./assets/asset\ 32.png");
+    background-position: center;
+    background-size: 300px;
+    background-repeat: repeat-x;
+}
+
+.mini {
+    text-align: center;
+    font-weight: 600;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    padding: 34px;
+    transition: all 1s ease;
+    overflow: hidden;
+}
+
+.mini:hover {
+    transform: scale(1.1);
+}
+
+/* Dream Company Section Here */
+.company {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.conpany_logo {
+    text-align: center;
+}
+
+.cmpy_text {
+
+    font-size: 20px;
+    font-weight: 900;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    padding: 14px;
+    margin: 20px;
+
+}
+
+.logo {
+    height: 79px;
+    padding: 13px;
+    filter: contrast(1);
+}
+
+/* Skill Section here */
+.skill_main {
+    margin-top: 100px;
+    background: url("./assets/asset\ 34.svg");
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.skill_section {
+    width: 100%;
+    margin-block: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.top_head {
+
+    margin-top: 34px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading {
+    height: 37px;
+    color: rgb(1, 17, 93);
+    word-spacing: 4px;
+    margin-inline: 8px;
+    line-height: 25px;
+    margin-block: 5px;
+}
+
+.skill_item {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    max-width: 30%;
+    min-width: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+    flex-direction: column;
+    border-radius: 50%;
+    transition: all 1s ease;
+}
+
+.skill_item:hover {
+
+    transform: scale(1.2);
+}
+
+.skill_logo {
+    width: 54px;
+    padding-bottom: 8px;
+}
+
+.skill_item h2 {
+    color: rgb(2, 14, 77);
+    padding-inline: 32px;
+    padding-bottom: 12px;
+}
+
+.skill_item p {
+    padding-inline: 28px;
+    padding-bottom: 28px;
+    line-height: 20px;
+    color: rgba(8, 0, 78, 0.742);
+}
+
+.learnmore_btn {
+
+    text-decoration: none;
+    color: #183b56;
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+    padding-inline: 16px;
+    border-radius: 6px;
+}
+
+.learnmore_btn:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(100, 0, 194);
+}
+
+/* About Section here */
+.about-me {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.aboutme_head {
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.about_item {
+    margin-top: 44px;
+    justify-content: space-between;
+}
+
+.side_1 {
+    margin-top: 6rem;
+    width: 50%;
+    align-self: flex-start;
+    padding: 12px;
+    transition: all 1.2s ease;
+}
+
+.side_1:hover {
+    transform: scale(1.1);
+}
+
+.side_1 p {
+    padding-inline: 8px;
+    word-spacing: 2px;
+    line-height: 23px;
+    color: rgba(0, 0, 0, 0.692);
+    font-weight: 500;
+    background: url("./assets/asset\ 35.svg");
+    background-size: 80px;
+    background-repeat: no-repeat;
+}
+
+.side_2 img {
+    width: 500px;
+}
+
+.order {
+    order: 1;
+}
+
+/* Contact Section Here */
+.contact_first {
+    margin-top: 8rem;
+    background: linear-gradient(to top right, rgba(255, 0, 0, 0.133), rgba(132, 0, 255, 0.133));
+    background-color: rgba(149, 0, 255, 0.097);
+
+}
+
+
+.contact {
+    justify-content: center;
+    padding-block: 100px;
+}
+
+.contact_second {
+    color: rgb(1, 17, 93);
+    flex-direction: column;
+    width: 530px;
+    height: 550px;
+    border: 4px solid white;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.342);
+    transform: skewx(-6deg);
+}
+
+.contact_second h1 {
+    margin-top: 52px;
+    font-size: 36px;
+    margin-bottom: 4px;
+}
+
+.small-para {
+    padding-bottom: 27px;
+    width: 43%
+}
+
+.contact_second h1 img {
+    position: relative;
+    top: 11px;
+}
+
+.contact_third form {
+    width: 100%;
+    margin-top: 8px;
+
+}
+
+.contact_third p input {
+    width: 100%;
+    height: 32px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.342);
+    padding-left: 12px;
+    border: 2px solid rgb(1, 17, 93);
+}
+
+.contact_third p {
+    margin: 12px;
+
+}
+
+.contact_third label {
+    line-height: 36px;
+    font-size: 20px;
+
+}
+
+#submit {
+    background-color: rgb(1, 17, 93);
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: white;
+    margin-top: 30px;
+}
+
+#submit:hover {
+    background-color: rgb(8, 34, 163);
+}
+
+#submit:active {
+    transform: translateY(-4px);
+    box-shadow: 4px 4px 4px rgb(60, 60, 60);
+}
+
+/* Footer Section here */
+.footer_main {
+    width: 100%;
+    background-color: #001f35;
+    border-top: 4px solid #002643;
+}
+
+.left_footer {
+
+    height: 24vh;
+}
+
+.left_footer a img {
+    height: 100px;
+    filter: brightness(1.1);
+}
+
+.right_footer {
+    margin-top: 15px;
+    margin-bottom: 34px;
+    gap: 6rem;
+}
+
+.right_first,
+.right_second {
+    flex-direction: column;
+}
+
+.right_first a,
+.right_second a {
+    text-decoration: none;
+}
+
+.right_first a,
+.right_second a {
+
+    line-height: 43px;
+    color: rgb(255, 255, 255);
+    transition: all .5s ease;
+}
+
+.right_first a:hover,
+.right_second a:hover,
+.right_third a:hover {
+    transform: scale(1.2);
+
+}
+
+.right_third a {
+
+    transition: all .5s ease;
+}
+
+.right_third a img {
+    width: 30px;
+}
+
+.resume {
+    margin-bottom: 46px;
+}
+
+.right_third {
+    width: 150px;
+    justify-content: center;
+    gap: 15px;
+    filter: invert(.9);
+
+
+}
+
+.right_third a img {
+    color: white;
+}
+
+.subfooter {
+    background-color: #002643;
+    color: white;
+    height: 4vh;
+    font-size: 10px;
+
+}
+
+.sub_text {
+    padding-top: 8px;
+    justify-content: center;
+}
+.back-top img{
+    position: fixed;
+    z-index: 107;
+    bottom: 70px;
+    background-color: #ffffff91;
+    border-radius: 50%;
+    right: 34px;
+    animation: Anime 1.2s  2s infinite alternate;
+}
