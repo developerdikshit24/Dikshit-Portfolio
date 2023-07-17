@@ -48,6 +48,9 @@
         flex-direction: column;
         width: 100%;
     }
+    .left_footer{
+       height: 19vh;
+    }
    
 }
 @media (min-width:996px){
