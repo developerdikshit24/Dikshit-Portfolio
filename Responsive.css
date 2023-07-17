@@ -7,6 +7,9 @@
 }
 @media (max-width:996px) {
    
+    .container{
+        padding-inline: 9px;
+    }
     .hero-img{
         width: 100%;
         
@@ -18,7 +21,10 @@
     
     .navitem  {
       position: absolute;
-      background-color: white;
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.329);
+      font-weight: 600;
       z-index: 1;
       left: -100%;
       top: 100%;
@@ -38,7 +44,7 @@
     }
 
     .navbar{
-        height: 50px;
+        height: 100%;
         overflow: initial;
     }
     .side_2 img{
@@ -59,12 +65,18 @@
     }
 }
 @media (max-width:900px){
+    .back{
+        height: 90px;
+    }
     .head{
         flex-direction: column-reverse;
         justify-content: start;
     }
     .hero_text{
         width: 96%
+    }
+    .mini_text{
+        margin-top: 17px;
     }
     .company{
         margin-top: 10px;
@@ -77,7 +89,12 @@
     
         max-width: 100%;
     }
-    .align , .cmpy_text{
+    .align {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .cmpy_text{
+        font-size: 18px;
         text-align: center;
         margin-bottom: 30px;
     }
@@ -101,13 +118,13 @@
 }
 @media (max-width:600px){
     .navimg a img{
-        height: 42px;
+        height: 55px;
     }
     .navicon a {
-        margin-inline: 4px;
+        margin-inline: 2px;
     }
     .navicon a img {
-        width: 21px;
+        width: 32px;
     }
  .contact_second{
     width: 314px;
@@ -171,8 +188,4 @@
     filter: contrast(1.2);
 
 }
-.hero_text button{
-    margin-bottom: 16px;
-}
-
 }
