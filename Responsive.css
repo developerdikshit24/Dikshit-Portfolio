@@ -92,6 +92,9 @@
     .left_footer a img {
         height: 80px;
     }
+    .left_footer {
+        height: 95px;
+    }
 }
 @media (max-width:600px){
     .navimg a img{
@@ -101,7 +104,7 @@
         margin-inline: 4px;
     }
     .navicon a img {
-        width: 20px;
+        width: 21px;
     }
  .contact_second{
     width: 314px;
@@ -158,6 +161,15 @@
 }
 .back-top img{
     width: 40px;
+}
+.logo {
+    height: 70px;
+    padding: 10px;
+    filter: contrast(1.2);
+
+}
+.hero_text button{
+    margin-bottom: 16px;
 }
 
 }
